@@ -204,4 +204,608 @@
         #loading-indicator {
             display: none; /* Inicia oculto */
             text-align: center;
-            margin-top: 1
+            margin-top: 16px;
+            color: #6d28d9;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Bem-vindo! -->
+        <div id="slide-1" class="slide active">
+            <h2 class="text-purple-700">Encontre o Seu Caminho no Mundo Digital</h2>
+            <p class="text-center text-lg mb-8">
+                Olá! É um prazer enorme te apresentar o meu primeiro projeto de IA, desenvolvido por mim, Luana Fernanda, Líder de Comunidade.
+                Criei essa ferramenta para te ajudar a descobrir qual curso tem mais conexão com seus objetivos, interesses e sonhos no universo digital.
+            </p>
+            <div class="bg-indigo-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-indigo-800 mb-4">Como funciona?</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>✨ Guia: responda às perguntas com sinceridade, pensando no que realmente faz sentido para você.</li>
+                    <li>✨ Personalização: ao final, você receberá uma sugestão de curso feita sob medida para seu perfil.</li>
+                    <li>✨ Primeiro passo: essa ferramenta foi pensada para ser o início da sua jornada de aprendizado, oferecendo um direcionamento claro e eficiente para você conquistar seus objetivos.</li>
+                </ul>
+            </div>
+            <div class="disclaimer-box">
+                <p class="font-semibold mb-2">Importante:</p>
+                <p>Por ser um projeto em desenvolvimento, pode acontecer de a sugestão não sair perfeita em alguns casos. Se isso acontecer, me envie seu feedback! Assim, posso aprimorar o questionário e deixá-lo cada vez melhor para todo mundo.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Seus Interesses e Aspirações - Perguntas 1 e 2 -->
+        <div id="slide-2" class="slide">
+            <h2>Seus Interesses e Aspirações</h2>
+
+            <div class="question-group">
+                <h3>1. Qual área te atrai mais no universo digital?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="A">
+                    <span>A) Análise de dados, números e insights para tomadas de decisão.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="B">
+                    <span>B) Criação, desenvolvimento e liderança de produtos ou serviços digitais.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="C">
+                    <span>C) O estudo do comportamento do usuário, design de interfaces e experiência do cliente.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="D">
+                    <span>D) Estratégias de mercado, vendas, comunicação e branding para produtos.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="E">
+                    <span>E) Gerenciamento de equipes, estratégia de negócios e liderança em alto nível.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="F">
+                    <span>F) Inovação e aplicação de novas tecnologias, como Inteligência Artificial.</span>
+                </label>
+            </div>
+
+            <div class="question-group">
+                <h3>2. Qual é o seu principal objetivo ao fazer um curso agora?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="A">
+                    <span>A) Adquirir novas habilidades para otimizar processos e resultados com base em dados.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="B">
+                    <span>B) Liderar o ciclo de vida de um produto, desde a ideia até o lançamento e sucesso.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="C">
+                    <span>C) Aprimorar a forma como produtos são idealizados, prototipados e testados antes do desenvolvimento.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="D">
+                    <span>D) Construir ou aprimorar meu portfólio e habilidades em design (UX/UI) para produtos digitais.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="E">
+                    <span>E) Entender como posicionar um produto no mercado, criar narrativas impactantes e impulsionar vendas.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="F">
+                    <span>F) Subir para cargos de liderança, gerenciar múltiplos produtos ou equipes e definir a estratégia de negócios de uma empresa.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="G">
+                    <span>G) Entender e aplicar tecnologias emergentes, como Inteligência Artificial, para gerar valor nos negócios.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Novo Slide: Seus Interesses e Aspirações - Pergunta 3 -->
+        <div id="slide-2b" class="slide">
+            <h2>Seus Interesses e Aspirações</h2>
+            <div class="question-group">
+                <h3>3. Com qual das seguintes atividades você se identifica mais?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="A">
+                    <span>A) Analisar planilhas, criar relatórios, identificar tendências e prever resultados.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="B">
+                    <span>B) Conduzir pesquisas com usuários, definir funcionalidades, gerenciar roadmaps e alinhar equipes.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="C">
+                    <span>C) Desenhar wireframes, criar protótipos, testar usabilidade e iterar designs com base em feedback.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="D">
+                    <span>D) Criar campanhas de lançamento, definir mensagens-chave, analisar o mercado e o público-alvo.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="E">
+                    <span>E) Mentorar equipes, definir metas estratégicas, gerenciar orçamentos e negociar com stakeholders.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="F">
+                    <span>F) Explorar novas ferramentas de IA, identificar casos de uso, e implementar soluções inovadoras.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Slide 3: Sua Experiência Profissional Atual - Perguntas 4 e 5 -->
+        <div id="slide-3" class="slide">
+            <h2>Sua Experiência Profissional Atual</h2>
+
+            <div class="question-group">
+                <h3>4. Qual é o seu nível de experiência na área de produtos digitais ou tecnologia?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="A">
+                    <span>A) Sou iniciante ou estou buscando uma transição de carreira.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="B">
+                    <span>B) Tenho alguma experiência, mas busco aprofundar conhecimentos específicos.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="C">
+                    <span>C) Sou um profissional experiente e busco aprimorar habilidades de liderança ou estratégia.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="D">
+                    <span>D) Sou um líder ou executivo que busca entender como aplicar novas tecnologias e gerenciar em escala.</span>
+                </label>
+            </div>
+
+            <div class="question-group">
+                <h3>5. Você já trabalha com dados ou tem interesse em usá-los para tomar decisões?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="A">
+                    <span>A) Sim, já trabalho ou tenho muito interesse em usar dados.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="B">
+                    <span>B) Não, mas gostaria de aprender como os dados podem impulsionar minhas decisões.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="C">
+                    <span>C) Uso dados de forma superficial e quero me aprofundar.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Novo Slide: Sua Experiência Profissional Atual - Pergunta 6 -->
+        <div id="slide-3b" class="slide">
+            <h2>Sua Experiência Profissional Atual</h2>
+            <div class="question-group">
+                <h3>6. Sua função atual ou desejada envolve (ou envolverá) a liderança de pessoas ou projetos complexos?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q6" value="A">
+                    <span>A) Sim, já lidero ou busco liderar equipes/projetos.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q6" value="B">
+                    <span>B) Não, meu foco é mais técnico ou individual.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q6" value="C">
+                    <span>C) Comecei a liderar recentemente e preciso de orientação.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Slide 4: Seus Desafios e Próximos Passos - Pergunta 7 -->
+        <div id="slide-4" class="slide">
+            <h2>Seus Desafios e Próximos Passos</h2>
+
+            <div class="question-group">
+                <h3>7. Qual dos seguintes desafios você mais gostaria de superar em sua carreira?</h3>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="A">
+                    <span>A) Falta de confiança em tomar decisões baseadas em números.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="B">
+                    <span>B) Dificuldade em transformar ideias em produtos de sucesso que resolvam problemas reais.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="C">
+                    <span>C) Não saber como validar ideias de produtos de forma eficiente, perdendo tempo e recursos.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="D">
+                    <span>D) Dificuldade em criar interfaces intuitivas e experiências de usuário memoráveis.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="E">
+                    <span>E) Não conseguir comunicar o valor do produto para o mercado e impulsionar sua adoção.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="F">
+                    <span>F) Desafios em gerenciar equipes grandes, múltiplos produtos ou definir a visão estratégica de longo prazo.</span>
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q7" value="G">
+                    <span>G) Incapacidade de identificar e implementar o potencial da Inteligência Artificial em meu negócio.</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Slide 5: Análise e Sugestão de Curso -->
+        <div id="slide-5" class="slide">
+            <h2>Análise e Sugestão de Curso</h2>
+            <div id="course-suggestion" class="result-section">
+                <!-- O resultado será inserido aqui pelo JavaScript -->
+            </div>
+            <button id="expandDescriptionBtn" class="primary w-full mt-4" style="display:none;">Expandir Descrição ✨</button>
+            <div id="loading-indicator" class="mt-4" style="display:none;">Carregando descrição...</div>
+            <div id="expanded-description-section">
+                <h4>Descrição Detalhada e Plano de Estudos:</h4>
+                <div id="expanded-description-content"></div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Próximos Passos -->
+        <div id="slide-8" class="slide">
+            <h2>Próximos Passos</h2>
+            <p class="text-center text-lg mb-8">Esperamos que esta apresentação tenha te ajudado a ter mais clareza sobre qual caminho seguir!</p>
+            <div class="bg-purple-50 p-6 rounded-lg shadow-sm">
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Lembre-se que esta é uma recomendação inicial.</li>
+                    <li>Se tiver mais de um objetivo em mente ou uma situação mais complexa, considere a possibilidade de conversar com um consultor educacional para uma análise mais aprofundada.</li>
+                </ul>
+                <p class="text-center text-lg mt-8 font-semibold text-purple-800">Gostaria de explorar mais alguma área ou tem alguma dúvida específica sobre um dos cursos?</p>
+            </div>
+        </div>
+
+        <!-- Controles de Navegação -->
+        <div class="button-group">
+            <button id="prevBtn" class="secondary" disabled>Anterior</button>
+            <button id="nextBtn" class="primary">Próximo</button>
+        </div>
+    </div>
+
+    <script>
+        // Array de IDs dos slides
+        const slides = ['slide-1', 'slide-2', 'slide-2b', 'slide-3', 'slide-3b', 'slide-4', 'slide-5', 'slide-8'];
+        let currentSlideIndex = 0;
+        let suggestedCourseName = ''; // Variável para armazenar o nome do curso sugerido
+
+        // Elementos dos botões de navegação e novas seções
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const courseSuggestionDiv = document.getElementById('course-suggestion');
+        const expandDescriptionBtn = document.getElementById('expandDescriptionBtn');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const expandedDescriptionSection = document.getElementById('expanded-description-section');
+        const expandedDescriptionContent = document.getElementById('expanded-description-content');
+
+
+        // Objeto para armazenar as respostas do usuário
+        const userAnswers = {
+            q1: null,
+            q2: null,
+            q3: null,
+            q4: null,
+            q5: null,
+            q6: null,
+            q7: null
+        };
+
+        /**
+         * Exibe o slide atual e esconde os outros.
+         * Atualiza o estado dos botões de navegação.
+         */
+        function showSlide() {
+            slides.forEach((id, index) => {
+                const slideElement = document.getElementById(id);
+                if (slideElement) { // Garante que o elemento existe antes de tentar manipular
+                    if (index === currentSlideIndex) {
+                        slideElement.classList.add('active');
+                    } else {
+                        slideElement.classList.remove('active');
+                    }
+                }
+            });
+
+            // Habilita/desabilita botões
+            prevBtn.disabled = currentSlideIndex === 0;
+            nextBtn.disabled = currentSlideIndex === slides.length - 1;
+
+            // Se for o slide de sugestão, gera o conteúdo
+            if (slides[currentSlideIndex] === 'slide-5') {
+                generateCourseSuggestion();
+                // Mostra o botão "Expandir Descrição" apenas se houver um curso sugerido
+                if (suggestedCourseName) {
+                    expandDescriptionBtn.style.display = 'block';
+                } else {
+                    expandDescriptionBtn.style.display = 'none';
+                }
+                // Oculta a seção de descrição expandida ao recarregar o slide de sugestão
+                expandedDescriptionSection.style.display = 'none';
+                expandedDescriptionContent.innerHTML = ''; // Limpa o conteúdo
+            } else {
+                expandDescriptionBtn.style.display = 'none'; // Esconde o botão em outros slides
+                expandedDescriptionSection.style.display = 'none';
+                expandedDescriptionContent.innerHTML = '';
+            }
+        }
+
+        /**
+         * Avança para o próximo slide.
+         */
+        function nextSlide() {
+            // Salva as respostas do slide atual antes de avançar
+            saveCurrentSlideAnswers();
+
+            if (currentSlideIndex < slides.length - 1) {
+                currentSlideIndex++;
+                showSlide();
+            }
+        }
+
+        /**
+         * Retorna para o slide anterior.
+         */
+        function prevSlide() {
+            if (currentSlideIndex > 0) {
+                currentSlideIndex--;
+                showSlide();
+            }
+        }
+
+        /**
+         * Salva as respostas do slide atual no objeto userAnswers.
+         */
+        function saveCurrentSlideAnswers() {
+            const currentSlideId = slides[currentSlideIndex];
+            const currentSlideElement = document.getElementById(currentSlideId);
+
+            // Coleta respostas de rádio buttons
+            const radioGroups = currentSlideElement.querySelectorAll('input[type="radio"]:checked');
+            radioGroups.forEach(radio => {
+                const questionName = radio.name; // e.g., 'q1'
+                userAnswers[questionName] = radio.value;
+            });
+            console.log('Respostas salvas:', userAnswers); // Para depuração
+        }
+
+        /**
+         * Gera a sugestão de curso com base nas respostas do usuário.
+         */
+        function generateCourseSuggestion() {
+            const q1 = userAnswers.q1;
+            const q2 = userAnswers.q2;
+            const q3 = userAnswers.q3;
+            const q4 = userAnswers.q4;
+            const q5 = userAnswers.q5;
+            const q6 = userAnswers.q6;
+            const q7 = userAnswers.q7; // Obtém a resposta da q7
+
+            let suggestionHtml = '';
+            let courseFound = false;
+            suggestedCourseName = ''; // Reseta o nome do curso sugerido
+
+            // Prioriza com base na Q2 (Principal Objetivo)
+            if (q2 === 'A') { // Objetivo de Data Analytics
+                suggestedCourseName = 'Data Analytics';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Analisar dados e utilizá-los para embasar decisões e otimizar resultados.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é ideal para profissionais em evolução de carreira e responsáveis por tomadas de decisão que querem aprender a usar dados e ferramentas da área para impulsionar seus resultados.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'B') { // Objetivo de Digital Product Leadership
+                suggestedCourseName = 'Digital Product Leadership';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Criar produtos que as pessoas amam, resolver problemas reais e liderar times de produto digitais.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Esta formação te capacitará para definir estratégias de negócios, usar dados para KPIs e OKRs, realizar pesquisas, criar protótipos e liderar efetivamente um time de produto.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'C') { // Objetivo de Product Discovery
+                suggestedCourseName = 'Product Discovery';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Aprofundar seu conhecimento em como descobrir e validar ideias de produtos, reduzindo riscos e otimizando investimentos.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é para profissionais que lideram ou trabalham com produtos digitais e precisam entender o aspecto cíclico do discovery, aprofundando-se no tema e aprendendo o ciclo completo de descoberta.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'D') { // Objetivo de Digital Product Design
+                suggestedCourseName = 'Digital Product Design';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Construir ou aprimorar suas habilidades em design de produtos digitais (UX/UI) e criar um portfólio com projetos reais.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é perfeito para profissionais buscando evoluir na carreira de Design, UX e UI, ou para aqueles em busca de migração de carreira para Product Design.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'E') { // Objetivo de Product Marketing
+                suggestedCourseName = 'Product Marketing';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Entender como posicionar, precificar e lançar produtos no mercado, e alinhar marketing com equipes de produto para otimizar resultados.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é ideal para profissionais de produto que buscam otimizar resultados, profissionais de marketing, comunicação e vendas, ou pessoas interessadas em atuar como Product Marketing Manager.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'F') { // Objetivo de LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS
+                suggestedCourseName = 'LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Assumir cargos de liderança sênior, gerenciar múltiplos produtos ou equipes e definir a estratégia de negócios de uma empresa.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é direcionado a profissionais sênior de gestão de produtos digitais, Group Product Managers emergentes, e executivos que desejam entender a intersecção entre produtos digitais e estratégia.</p>
+                `;
+                courseFound = true;
+            } else if (q2 === 'G') { // Objetivo de INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS
+                suggestedCourseName = 'INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS';
+                suggestionHtml = `
+                    <h3>Seu objetivo: Aprender a utilizar Inteligência Artificial para otimizar negócios, avaliar investimentos e melhorar a produtividade.</h3>
+                    <p>Sua indicação: <strong>${suggestedCourseName}</strong>. Este curso é ideal para lideranças e times de negócios, executivos e analistas, e profissionais de diversas áreas (marketing, vendas, produto, design, CS) que buscam utilizar o potencial da IA.</p>
+                `;
+                courseFound = true;
+            }
+
+            // Fallback: Se a Q2 não for um indicador forte ou não for respondida, usa combinação de Q1, Q3, Q7
+            if (!courseFound) {
+                // Conta os "votos" para cada tipo de curso com base nas Q1, Q3, Q7
+                const votes = {
+                    'Data Analytics': 0,
+                    'Digital Product Leadership': 0,
+                    'Product Discovery': 0,
+                    'Digital Product Design': 0,
+                    'Product Marketing': 0,
+                    'LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS': 0,
+                    'INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS': 0
+                };
+
+                // Votos da Q1
+                if (q1 === 'A') votes['Data Analytics'] += 1;
+                if (q1 === 'B') votes['Digital Product Leadership'] += 1; // Também pode indicar Product Discovery
+                if (q1 === 'C') votes['Digital Product Design'] += 1;
+                if (q1 === 'D') votes['Product Marketing'] += 1;
+                if (q1 === 'E') votes['LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS'] += 1;
+                if (q1 === 'F') votes['INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS'] += 1;
+
+                // Votos da Q3
+                if (q3 === 'A') votes['Data Analytics'] += 1;
+                if (q3 === 'B') votes['Digital Product Leadership'] += 1; // Também pode indicar Product Discovery
+                if (q3 === 'C') votes['Digital Product Design'] += 1;
+                if (q3 === 'D') votes['Product Marketing'] += 1;
+                if (q3 === 'E') votes['LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS'] += 1;
+                if (q3 === 'F') votes['INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS'] += 1;
+
+                // Votos da Q7 (desafios)
+                if (q7 === 'A') votes['Data Analytics'] += 1;
+                if (q7 === 'B') votes['Digital Product Leadership'] += 1;
+                if (q7 === 'C') votes['Product Discovery'] += 1;
+                if (q7 === 'D') votes['Digital Product Design'] += 1;
+                if (q7 === 'E') votes['Product Marketing'] += 1;
+                if (q7 === 'F') votes['LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS'] += 1;
+                if (q7 === 'G') votes['INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS'] += 1;
+
+                // Adiciona pontos para Q5 (interesse em dados) e Q6 (liderança)
+                if (q5 === 'A') votes['Data Analytics'] += 0.5;
+                if (q5 === 'C') votes['Data Analytics'] += 0.25;
+                if (q6 === 'A') {
+                    votes['Digital Product Leadership'] += 0.5;
+                    votes['LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS'] += 0.5;
+                }
+                if (q6 === 'C') {
+                    votes['Digital Product Leadership'] += 0.25;
+                    votes['LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS'] += 0.25;
+                }
+
+                // Determina o curso com mais votos
+                let maxVotes = 0;
+                let finalSuggestedCourse = ''; // Renomeia para evitar conflito
+                
+                for (const course in votes) {
+                    if (votes[course] > maxVotes) {
+                        maxVotes = votes[course];
+                        finalSuggestedCourse = course;
+                    }
+                }
+
+                if (finalSuggestedCourse) {
+                    courseFound = true;
+                    suggestedCourseName = finalSuggestedCourse; // Atribui ao suggestedCourseName
+                    // Fornece uma descrição mais genérica se for um fallback
+                    let description = "";
+                    switch (finalSuggestedCourse) {
+                        case 'Data Analytics':
+                            description = "Seus interesses e desafios indicam uma forte inclinação para a análise de dados e tomada de decisões. Este curso te dará as ferramentas para transformar dados em insights valiosos.";
+                            break;
+                        case 'Digital Product Leadership':
+                            description = "Você demonstra interesse em criar e liderar produtos digitais. Este curso pode te capacitar para desenvolver estratégias, gerenciar equipes e entregar produtos de sucesso.";
+                            break;
+                        case 'Product Discovery':
+                            description = "Sua curiosidade em validar ideias e mitigar riscos em produtos é notável. Este curso irá aprofundar suas técnicas de descoberta e experimentação.";
+                            break;
+                        case 'Digital Product Design':
+                            description = "Seu perfil aponta para uma paixão por design, experiência do usuário e interfaces. Este curso te ajudará a construir um portfólio sólido e evoluir nesta área.";
+                            break;
+                        case 'Product Marketing':
+                            description = "Você tem um forte interesse em como produtos são posicionados e comunicados ao mercado. Este curso te ensinará a otimizar resultados através de estratégias de marketing de produto.";
+                            break;
+                        case 'LIDERANÇA & ESTRATÉGIA DE NEGÓCIOS':
+                            description = "Seus objetivos e experiência indicam um desejo de liderar e definir estratégias em um nível mais alto. Este curso é ideal para aprimorar suas habilidades de gestão e liderança.";
+                            break;
+                        case 'INTELIGÊNCIA ARTIFICIAL PARA NEGÓCIOS DIGITAIS':
+                            description = "Seu interesse em inovação e aplicação de IA em negócios é evidente. Este curso te capacitará a explorar o potencial da Inteligência Artificial para otimizar processos e estratégias.";
+                            break;
+                        default:
+                            description = "Este curso pode ser um excelente ponto de partida para aprimorar suas habilidades e avançar em sua carreira no mundo digital.";
+                    }
+
+                    suggestionHtml = `
+                        <h3>Com base nas suas respostas, sua indicação é: <strong>${suggestedCourseName}</strong></h3>
+                        <p>${description}</p>
+                    `;
+                }
+            }
+
+            // Último fallback: se nada for encontrado, oferece a sugestão geral
+            if (!courseFound) {
+                suggestedCourseName = 'Digital Product Leadership'; // Sugestão padrão para o fallback
+                suggestionHtml = `
+                    <h3>Suas respostas mostram que você tem interesses bem diversos, o que é super positivo!</h3>
+                    <p>Por isso, uma sugestão que pode fazer muito sentido é o curso de <strong>${suggestedCourseName}</strong>, que oferece uma visão ampla sobre criação e gestão de produtos digitais, aplicável em várias áreas.</p>
+                    <p>Se quiser, também pode revisar suas respostas para refletir ainda mais sobre seus objetivos.</p>
+                `;
+            }
+
+            courseSuggestionDiv.innerHTML = suggestionHtml;
+        }
+
+        /**
+         * Faz a chamada à API Gemini para expandir a descrição do curso.
+         */
+        async function expandCourseDescription() {
+            if (!suggestedCourseName) {
+                expandedDescriptionContent.innerText = "Nenhum curso sugerido para expandir.";
+                expandedDescriptionSection.style.display = 'block';
+                return;
+            }
+
+            loadingIndicator.style.display = 'block'; // Mostra o indicador de carregamento
+            expandedDescriptionSection.style.display = 'none'; // Esconde a seção de descrição anterior
+            expandedDescriptionContent.innerHTML = ''; // Limpa o conteúdo
+
+            try {
+                let chatHistory = [];
+                const prompt = `Gere uma descrição detalhada e um breve plano de estudos (incluindo 3-5 tópicos principais e 3-5 habilidades que serão desenvolvidas) para o curso de ${suggestedCourseName}. Responda em português e formate a saída como texto simples, com parágrafos claros.`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Deixe como está, Canvas irá fornecer em tempo de execução
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                console.log('Gemini API Response:', result); // Para depuração
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    expandedDescriptionContent.innerText = text;
+                    expandedDescriptionSection.style.display = 'block'; // Mostra a seção com a descrição
+                } else {
+                    expandedDescriptionContent.innerText = "Não foi possível gerar a descrição detalhada para este curso. Tente novamente mais tarde.";
+                    expandedDescriptionSection.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Erro ao chamar a API Gemini:', error);
+                expandedDescriptionContent.innerText = "Ocorreu um erro ao carregar a descrição. Por favor, tente novamente.";
+                expandedDescriptionSection.style.display = 'block';
+            } finally {
+                loadingIndicator.style.display = 'none'; // Esconde o indicador de carregamento
+            }
+        }
+
+
+        // Adiciona event listeners aos botões
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        expandDescriptionBtn.addEventListener('click', expandCourseDescription); // Novo evento para o botão de expansão
+
+        // Inicializa a apresentação
+        showSlide();
+    </script>
+</body>
+</html>
